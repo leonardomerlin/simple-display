@@ -22,7 +22,12 @@ describe('SimpleDisplay', () => {
     }).toThrowError(messageError)
   })
 
-  test.skip('should work with "1"', () => {})
+  test('should work with "1"', () => {
+    const result = simpleDisplay(1)
+    const expected = '1'
+    expect(result).toBe(expected)
+  })
+
   test.skip('should work with "2"', () => {})
   test.skip('should work with "3"', () => {})
   test.skip('should work with "4"', () => {})
