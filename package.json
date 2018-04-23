@@ -1,0 +1,29 @@
+{
+  "name": "@leonardomerlin/simple-display",
+  "version": "1.0.0",
+  "description": "A simple solution for Pipefy's code challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardomerlin/challenge-simple-display.git"
+  },
+  "keywords": [
+    "pipefy",
+    "capiconf",
+    "codechallenge",
+    "simple",
+    "display"
+  ],
+  "author": "Leonardo Merlin <leonardo.merlin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonardomerlin/challenge-simple-display/issues"
+  },
+  "homepage": "https://github.com/leonardomerlin/challenge-simple-display#readme",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
