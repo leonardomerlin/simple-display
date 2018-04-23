@@ -28,12 +28,164 @@ describe('SimpleDisplay', () => {
     expect(result).toBe(expected)
   })
 
-  test.skip('should work with "2"', () => {})
-  test.skip('should work with "3"', () => {})
-  test.skip('should work with "4"', () => {})
-  test.skip('should work with "5"', () => {})
-  test.skip('should work with "6"', () => {})
-  test.skip('should work with "7"', () => {})
-  test.skip('should work with "8"', () => {})
-  test.skip('should work with "9"', () => {})
+  test('should work with "2"', () => {
+    const result = simpleDisplay(2)
+    const expected = [
+    '22',
+    ' 2',
+    ' 2',
+    '22',
+    '2',
+    '2',
+    '22',
+    ''].join('\n')
+    expect(result).toBe(expected)
+  })
+
+  test('should work with "3"', () => {
+    const result = simpleDisplay(3)
+    const expected = [
+      '333',
+      '  3',
+      '  3',
+      '  3',
+      '333',
+      '  3',
+      '  3',
+      '  3',
+      '333',
+      ''
+    ].join('\n')
+    expect(result).toBe(expected)
+  })
+
+  test('should work with "4"', () => {
+    const result = simpleDisplay(4)
+    const expected = [
+      '4  4',
+      '4  4',
+      '4  4',
+      '4  4',
+      '4444',
+      '   4',
+      '   4',
+      '   4',
+      '   4',
+      ''
+    ].join('\n')
+    expect(result).toBe(expected)
+  })
+
+  test('should work with "5"', () => {
+    const result = simpleDisplay(5)
+    const expected = [
+      '55555',
+      '5',
+      '5',
+      '5',
+      '5',
+      '5',
+      '55555',
+      '    5',
+      '    5',
+      '    5',
+      '    5',
+      '    5',
+      '55555',
+      ''
+    ].join('\n')
+    expect(result).toBe(expected)
+  })
+
+  test('should work with "6"', () => {
+    const result = simpleDisplay(6)
+    const expected = [
+      '666666',
+      '6',
+      '6',
+      '6',
+      '6',
+      '6',
+      '6',
+      '666666',
+      '6    6',
+      '6    6',
+      '6    6',
+      '6    6',
+      '6    6',
+      '6    6',
+      '666666',
+      ''
+    ].join('\n')
+    expect(result).toBe(expected)
+  })
+
+  test('should work with "7"', () => {
+    const expected = [
+      '7777777',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      ''
+    ].join('\n')
+    expect(simpleDisplay(7)).toBe(expected)
+  })
+
+  test('should work with "8"', () => {
+    const result = simpleDisplay(8)
+    const expected = [
+      '88888888',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '88888888',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '8      8',
+      '88888888',
+      ''
+    ].join('\n')
+    expect(result).toBe(expected)
+  })
+
+  test('should work with "9"', () => {
+    const expected = [
+      '999999999',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '999999999',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      ''
+    ].join('\n')
+    expect(simpleDisplay(9)).toBe(expected)
+  })
 })
