@@ -133,6 +133,26 @@ describe('SimpleDisplay', () => {
       ''
     ].join('\n')
     expect(simpleDisplay(7)).toBe(expected)
+
+    const expected_extended = [
+      '7777777',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      '      7',
+      ''
+    ].join('\n')
+    expect(simpleDisplay(7, true)).toBe(expected_extended)
   })
 
   test('should work with "8"', () => {
@@ -187,5 +207,31 @@ describe('SimpleDisplay', () => {
       ''
     ].join('\n')
     expect(simpleDisplay(9)).toBe(expected)
+
+    const expected_extended = [
+      '999999999',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '9       9',
+      '999999999',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '        9',
+      '999999999',
+      ''
+    ].join('\n')
+    expect(simpleDisplay(9, true)).toBe(expected_extended)
   })
 })
